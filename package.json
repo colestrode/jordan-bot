@@ -1,0 +1,28 @@
+{
+  "name": "jordan-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "standard index.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colestrode/jordan-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colestrode/jordan-bot/issues"
+  },
+  "homepage": "https://github.com/colestrode/jordan-bot#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "skellington": "^1.1.2"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
+  }
+}
