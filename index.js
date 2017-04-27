@@ -1,9 +1,17 @@
 const request = require('request')
 
 require('skellington')({
-  slackToken: process.env.SLACK_TOKEN,
+  // slackToken: process.env.SLACK_TOKEN,
+  clientId: process.env.CLIENT_ID,
+  clientSecret: process.env.CLIENT_SECRET,
+  port: process.env.PORT,
   plugins: [{
-    init: jordanize
+    init: jordanize,
+    scopes: ['bot', 'channels:history', 'groups:history', 'im:history', 'mpim:history'],
+    help: {
+      command: 'jordan',
+      text: `I listen for people talking about Rick and Morty. Just say Rick, and I'll come running`
+    }
   }]
 })
 
