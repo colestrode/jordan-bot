@@ -5,6 +5,9 @@ require('skellington')({
   clientId: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
   port: process.env.PORT,
+  botkit: {
+    json_file_store: './db/'
+  },
   plugins: [{
     init: jordanize,
     scopes: ['bot', 'channels:history', 'groups:history', 'im:history', 'mpim:history'],
